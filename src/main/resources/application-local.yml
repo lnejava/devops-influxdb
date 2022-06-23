@@ -1,0 +1,17 @@
+server:
+  port: 8098
+logging:
+  level:
+    root: info
+spring:
+  influx:
+    user: admin
+    password: admin
+    url: http://xxx:8086
+    database: jenkins_db
+    retentionPolicy: autogen
+influxdb:
+  measurements:
+    - jenkins_data
+    - sonarqube_data
+    - jacoco_data
